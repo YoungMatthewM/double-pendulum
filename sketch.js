@@ -14,7 +14,7 @@ function draw() {
 	translate(205,205);
 	rotate(PI/2);
   dp.update();
-  pts.splice(0,1);
+  pts.shift();
   pts.push(createVector(dp.x2,dp.y2));
   strokeWeight(2);
   colorMode(HSB,tail,100,100);
